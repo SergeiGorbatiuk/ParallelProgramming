@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.0.0
+MinimumVisualStudioVersion = 10.0.0.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParallelProgramming", "ParallelProgramming/ParallelProgramming.csproj", "{1DDC10A8-BC11-4288-BCE4-421EF342C86E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParallelPrimes", "ParallelPrimes\ParallelPrimes.csproj", "{E0772B95-DBC3-4CFA-B282-04EFB5FF267A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParallelLinkAnalyzer", "ParallelLinkAnalyzer\ParallelLinkAnalyzer.csproj", "{1CD8126B-9B73-4ABD-BAF8-FC0EE3D0C567}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtomicSnapshot", "AtomicSnapshot\AtomicSnapshot.csproj", "{8CD5901D-65F3-4773-B3EB-F0B4EA55F3B5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1DDC10A8-BC11-4288-BCE4-421EF342C86E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DDC10A8-BC11-4288-BCE4-421EF342C86E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DDC10A8-BC11-4288-BCE4-421EF342C86E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DDC10A8-BC11-4288-BCE4-421EF342C86E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0772B95-DBC3-4CFA-B282-04EFB5FF267A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0772B95-DBC3-4CFA-B282-04EFB5FF267A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0772B95-DBC3-4CFA-B282-04EFB5FF267A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0772B95-DBC3-4CFA-B282-04EFB5FF267A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CD8126B-9B73-4ABD-BAF8-FC0EE3D0C567}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CD8126B-9B73-4ABD-BAF8-FC0EE3D0C567}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CD8126B-9B73-4ABD-BAF8-FC0EE3D0C567}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CD8126B-9B73-4ABD-BAF8-FC0EE3D0C567}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CD5901D-65F3-4773-B3EB-F0B4EA55F3B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CD5901D-65F3-4773-B3EB-F0B4EA55F3B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CD5901D-65F3-4773-B3EB-F0B4EA55F3B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CD5901D-65F3-4773-B3EB-F0B4EA55F3B5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
