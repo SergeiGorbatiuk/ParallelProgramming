@@ -1,5 +1,4 @@
 # ParallelProgramming
-________________________
 ### Coursework on C# parallel programming course
 ##### 1) Atomic snapshot
 A wait-free algorithm for single writer multiple readred registers case
