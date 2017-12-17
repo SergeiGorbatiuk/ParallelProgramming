@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParallelLinkAnalyzer", "Par
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtomicSnapshot", "AtomicSnapshot\AtomicSnapshot.csproj", "{8CD5901D-65F3-4773-B3EB-F0B4EA55F3B5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParallelBST", "ParallelBST\ParallelBST.csproj", "{402D141A-8852-4E43-BC1B-C5D77174D2A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{8CD5901D-65F3-4773-B3EB-F0B4EA55F3B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CD5901D-65F3-4773-B3EB-F0B4EA55F3B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CD5901D-65F3-4773-B3EB-F0B4EA55F3B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{402D141A-8852-4E43-BC1B-C5D77174D2A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{402D141A-8852-4E43-BC1B-C5D77174D2A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{402D141A-8852-4E43-BC1B-C5D77174D2A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{402D141A-8852-4E43-BC1B-C5D77174D2A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
