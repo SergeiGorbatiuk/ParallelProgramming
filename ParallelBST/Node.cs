@@ -4,12 +4,12 @@ namespace ParallelBST
 {
     public class Node<T> where T : IComparable<T>    
     {
-        public T key;
-        public volatile int locked = 0;
-        public bool deleted = false;
+        internal T key;
+        internal volatile int locked = 0;
+        internal bool deleted = false;
 
-        public Node<T> rightChild = null;
-        public Node<T> leftChild = null;
+        internal Node<T> rightChild = null;
+        internal Node<T> leftChild = null;
 
         public Node(T key)
         {

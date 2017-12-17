@@ -10,7 +10,7 @@ namespace ParallelBST
 {
     public class ParallelBST<T> : IEnumerable<Node<T>> where T : IComparable<T>
     {
-        public Node<T> root = null;
+        private Node<T> root = null;
         private Hashtable buffer = new Hashtable();
         private const int maxDelayed = 5;
         private object _lockBuffer = new object();
@@ -101,23 +101,25 @@ namespace ParallelBST
                 buffer.Clear();
                     
                 Dictionary<T, Task<bool>> runningOperations = new Dictionary<T, Task<bool>>();
-                foreach (DictionaryEntry cur in tempbuff)
-                    
+                foreach (var cur in tempbuff)
                 {
-                    if (cur.Value.Equals(0))
+                    var taskToBeDone = cur.Value.Equals(0) ? PerformInsert((T) cur.Key) : PerformDelete((T) cur.Key);
+                    runningOperations.Add((T)cur.Key, taskToBeDone);
+                    
+                    /*if (cur.Value.Equals(0))
                     {
                         runningOperations.Add((T)cur.Key, PerformInsert((T)cur.Key));
                     }
                     else
                     {
                         runningOperations.Add((T)cur.Key, PerformDelete((T)cur.Key));
-                    }
+                    }*/
                 }
                 
                 foreach (var runningOperation in runningOperations)
                 {
                     var res = runningOperation.Value.Result;
-                    while (res == false)
+                    while (!res)
                     {
                         Console.WriteLine("Repeating operation");
                         res = PerformInsert(runningOperation.Key).Result;
@@ -145,12 +147,10 @@ namespace ParallelBST
                 {
                     if (current.leftChild != null)
                     {
-                        //current.locked = 0;
                         current = current.leftChild;
                     }
                     else
                     {
-                        //current.locked = 0;
                         Console.WriteLine("Node not found " + key);
                         return null;
                     }
@@ -160,24 +160,17 @@ namespace ParallelBST
                 {
                     if (current.rightChild != null)
                     {
-                        //current.locked = 0;
                         current = current.rightChild;
                     }
                     else
                     {
-                        //current.locked = 0;
                         Console.WriteLine("Node not found " + key);
                         return null;
                     }
                     continue;
                 }
-                //current.locked = 0;
                 Console.WriteLine("Node found " + key);
                 return current;
-                /*if (Interlocked.CompareExchange(ref current.locked, 1, 0) == 0)
-                {
-                    
-                }*/
             }
         }
         
